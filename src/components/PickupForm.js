@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   chip: {
     backgroundColor: "#d71a62",
+    textAlign: "right",
   },
 }));
 const PickupForm = () => {
@@ -44,12 +45,12 @@ const PickupForm = () => {
   return (
     <Container component="section" className={classes.root}>
       <Grid container spacing="3" alignItems="center" justify="center">
-        <Grid item xs={12} sm={9}>
+        <Grid item xs={12} sm={6}>
           <Grid container justify="center" spacing="2">
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               <InputLabel htmlFor="inventoryId">Inventory</InputLabel>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               {isInventoryVisible ? (
                 <TextField
                   size="medium"
@@ -83,10 +84,10 @@ const PickupForm = () => {
                 Edit
               </Button>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               <InputLabel htmlFor="pickupid">Pickup</InputLabel>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               {isPickupVisible ? (
                 <TextField
                   id="pickupid"
@@ -118,10 +119,10 @@ const PickupForm = () => {
                 Edit
               </Button>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={5}>
               <InputLabel htmlFor="dropoffid">Drop-off</InputLabel>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               {isDropOffVisible ? (
                 <TextField
                   size="medium"
