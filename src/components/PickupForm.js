@@ -31,17 +31,7 @@ const PickupForm = () => {
   const [isInventoryVisible, setIsInventoryVisible] = useState(false);
   const [isPickupVisible, setIsPickupVisible] = useState(false);
   const [isDropOffVisible, setIsDropOffVisible] = useState(false);
-  const handleEdit = (event) => {
-    const input = event.target.id;
-    console.log(input);
-    if (input == "inventory") {
-      setIsInventoryVisible(!isInventoryVisible);
-    } else if (input == "pickup") {
-      setIsPickupVisible(!isPickupVisible);
-    } else if (input == "dropoff") {
-      setIsDropOffVisible(!isDropOffVisible);
-    }
-  };
+
   return (
     <Container component="section" className={classes.root}>
       <Grid container spacing="3" alignItems="center" justify="center">
