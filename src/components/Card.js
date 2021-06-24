@@ -10,12 +10,8 @@ import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
-  },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
+    minWidth: 250,
+    borderRadius: 20,
   },
   title: {
     fontSize: 25,
@@ -24,7 +20,7 @@ const useStyles = makeStyles({
     color: "#000",
   },
   date: {
-    marginBottom: 12,
+    marginBottom: 1,
     textAlign: "left",
     fontSize: 12,
   },
