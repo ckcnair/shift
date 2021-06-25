@@ -16,17 +16,30 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(18, 4),
   },
   textFieldInput: {
-    paddingTop: 10,
-    paddingBottom: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
   },
   editbtn: {
     backgroundColor: "#d71a62",
     borderRadius: 20,
     marginLeft: "auto",
+    height: 30,
+    textTransform: "none",
+    fontWeight: "normal",
   },
   chip: {
     backgroundColor: "#d71a62",
     textAlign: "right",
+  },
+  inputlabel: {
+    textAlign: "left",
+  },
+  rightalign: {
+    textAlign: "right",
+  },
+  chkbox: {
+    color: "#d71a62",
+    transform: "scale(1.5)",
   },
 }));
 const PickupForm = () => {
@@ -41,9 +54,11 @@ const PickupForm = () => {
         <Grid item xs={12} sm={6}>
           <Grid container justify="center" spacing="1">
             <Grid item xs={5} alignItems="left">
-              <InputLabel htmlFor="inventoryId">Inventory</InputLabel>
+              <InputLabel htmlFor="inventoryId" className={classes.inputlabel}>
+                Inventory
+              </InputLabel>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} className={classes.rightalign}>
               {isInventoryVisible ? (
                 <TextField
                   size="medium"
@@ -74,13 +89,15 @@ const PickupForm = () => {
                 onClick={() => setIsInventoryVisible(!isInventoryVisible)}
                 id="inventory"
               >
-                Edit
+                edit
               </Button>
             </Grid>
             <Grid item xs={5} alignItems="left">
-              <InputLabel htmlFor="pickupid">Pickup</InputLabel>
+              <InputLabel htmlFor="pickupid" className={classes.inputlabel}>
+                Pickup
+              </InputLabel>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} className={classes.rightalign}>
               {isPickupVisible ? (
                 <TextField
                   id="pickupid"
@@ -109,13 +126,15 @@ const PickupForm = () => {
                 id="pickup"
                 onClick={() => setIsPickupVisible(!isPickupVisible)}
               >
-                Edit
+                edit
               </Button>
             </Grid>
             <Grid item xs={5}>
-              <InputLabel htmlFor="dropoffid">Drop-off</InputLabel>
+              <InputLabel htmlFor="dropoffid" className={classes.inputlabel}>
+                Drop-off
+              </InputLabel>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} className={classes.rightalign}>
               {isDropOffVisible ? (
                 <TextField
                   size="medium"
@@ -145,11 +164,11 @@ const PickupForm = () => {
                 id="dropoff"
                 onClick={() => setIsDropOffVisible(!isDropOffVisible)}
               >
-                Edit
+                edit
               </Button>
             </Grid>
             <Grid item xs={7}>
-              <InputLabel htmlFor="twopeople">
+              <InputLabel htmlFor="twopeople" className={classes.inputlabel}>
                 Do you require 2 people?
               </InputLabel>
             </Grid>
@@ -159,8 +178,9 @@ const PickupForm = () => {
             <Grid item xs={3}>
               <Checkbox
                 id="twopeople"
+                size="medium"
                 inputProps={{ "aria-label": "uncontrolled-checkbox" }}
-                style={{ color: "#d71a62" }}
+                className={classes.chkbox}
               />
             </Grid>
           </Grid>
