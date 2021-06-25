@@ -13,7 +13,7 @@ import van from "../static/images/van.png";
 import pc from "../static/images/pc.png";
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(12, 4),
+    padding: theme.spacing(18, 4),
   },
   textFieldInput: {
     paddingTop: 10,
