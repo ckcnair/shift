@@ -39,8 +39,8 @@ const PickupForm = () => {
     <Container component="section" className={classes.root}>
       <Grid container spacing="3" alignItems="center" justify="center">
         <Grid item xs={12} sm={6}>
-          <Grid container justify="center" spacing="2">
-            <Grid item xs={5}>
+          <Grid container justify="center" spacing="1">
+            <Grid item xs={5} alignItems="left">
               <InputLabel htmlFor="inventoryId">Inventory</InputLabel>
             </Grid>
             <Grid item xs={4}>
@@ -77,7 +77,7 @@ const PickupForm = () => {
                 Edit
               </Button>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={5} alignItems="left">
               <InputLabel htmlFor="pickupid">Pickup</InputLabel>
             </Grid>
             <Grid item xs={4}>
@@ -168,7 +168,7 @@ const PickupForm = () => {
       </Grid>
       <Grid container spacing="3" alignItems="center" justify="center">
         <Grid item xs={12} sm={6}>
-          <Grid container justify="center" spacing="2">
+          <Grid container justify="center" spacing="1">
             <Grid item xs={4}>
               <FeatureCard
                 image={shifter}
