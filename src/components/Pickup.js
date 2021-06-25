@@ -7,7 +7,7 @@ import PickupRange from "./PickupRange";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(12, 4),
+    padding: theme.spacing(1, 2),
   },
   paper: {
     borderRadius: 20,
