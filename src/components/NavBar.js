@@ -19,7 +19,9 @@ const NavBar = () => {
     <div>
       <AppBar position="fixed" className={classes.root}>
         <ToolBar>
-          <Typography className={classes.title}>shift</Typography>
+          <Typography className={classes.title} component="h2">
+            shift
+          </Typography>
         </ToolBar>
       </AppBar>
     </div>
