@@ -14,6 +14,7 @@ import pc from "../static/images/pc.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(18, 4),
+    paddingBottom: 20,
   },
   textFieldInput: {
     paddingTop: 5,
@@ -53,7 +54,7 @@ const PickupForm = () => {
       <Grid container spacing="3" alignItems="center" justify="center">
         <Grid item xs={12} sm={4}>
           <Grid container justify="center" spacing="1">
-            <Grid item xs={3} alignItems="left">
+            <Grid item xs={3}>
               <InputLabel htmlFor="inventoryId" className={classes.inputlabel}>
                 Inventory
               </InputLabel>
@@ -92,7 +93,7 @@ const PickupForm = () => {
                 edit
               </Button>
             </Grid>
-            <Grid item xs={3} alignItems="left">
+            <Grid item xs={3}>
               <InputLabel htmlFor="pickupid" className={classes.inputlabel}>
                 Pickup
               </InputLabel>
