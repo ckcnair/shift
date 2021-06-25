@@ -7,7 +7,10 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Chip from "@material-ui/core/Chip";
 import Checkbox from "@material-ui/core/Checkbox";
-
+import FeatureCard from "./FeatureCard";
+import shifter from "../static/images/shifter.png";
+import van from "../static/images/van.png";
+import pc from "../static/images/pc.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(12, 4),
@@ -159,6 +162,27 @@ const PickupForm = () => {
                 inputProps={{ "aria-label": "uncontrolled-checkbox" }}
                 style={{ color: "#d71a62" }}
               />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid container spacing="3" alignItems="center" justify="center">
+        <Grid item xs={12} sm={6}>
+          <Grid container justify="center" spacing="2">
+            <Grid item xs={4}>
+              <FeatureCard
+                image={shifter}
+                title={"A vetted and rated shifter"}
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <FeatureCard
+                image={van}
+                title={"Big enogh to fit everything in"}
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <FeatureCard image={pc} title={"Fixed price, no matter what!"} />
             </Grid>
           </Grid>
         </Grid>
