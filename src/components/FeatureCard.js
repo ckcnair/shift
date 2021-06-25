@@ -5,9 +5,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import shifter from "../static/images/shifter.png";
-import van from "../static/images/van.png";
-import pc from "../static/images/pc.png";
 
 const useStyles = makeStyles({
   root: {
