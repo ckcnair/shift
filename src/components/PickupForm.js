@@ -187,7 +187,7 @@ const PickupForm = () => {
         </Grid>
       </Grid>
       <Grid container spacing="3" alignItems="center" justify="center">
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={5}>
           <Grid container justify="center" spacing="1">
             <Grid item xs={4}>
               <FeatureCard
