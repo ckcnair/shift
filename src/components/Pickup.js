@@ -13,15 +13,19 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 20,
   },
 }));
-const Pickup = () => {
+const Pickup = (props) => {
   const classes = useStyles();
   let counter = 10;
   return (
     <Container component="section" maxWidth="lg" className={classes.root}>
       <Grid container spacing="3" alignItems="center" justify="center">
-        <Grid item xs={12} sm={9}>
+        <Grid item xs={12} sm={6}>
           <Grid container justify="center" spacing="3">
-            <PickupRange />
+            <PickupRange
+              step={1}
+              defaultValue={[14, 22]}
+              max={24}
+            />
           </Grid>
         </Grid>
         <Grid item xs={12} sm={9}>
