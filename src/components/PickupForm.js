@@ -51,14 +51,14 @@ const PickupForm = () => {
   return (
     <Container component="section" className={classes.root}>
       <Grid container spacing="3" alignItems="center" justify="center">
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={4}>
           <Grid container justify="center" spacing="1">
-            <Grid item xs={5} alignItems="left">
+            <Grid item xs={3} alignItems="left">
               <InputLabel htmlFor="inventoryId" className={classes.inputlabel}>
                 Inventory
               </InputLabel>
             </Grid>
-            <Grid item xs={4} className={classes.rightalign}>
+            <Grid item xs={6} className={classes.rightalign}>
               {isInventoryVisible ? (
                 <TextField
                   size="medium"
@@ -92,12 +92,12 @@ const PickupForm = () => {
                 edit
               </Button>
             </Grid>
-            <Grid item xs={5} alignItems="left">
+            <Grid item xs={3} alignItems="left">
               <InputLabel htmlFor="pickupid" className={classes.inputlabel}>
                 Pickup
               </InputLabel>
             </Grid>
-            <Grid item xs={4} className={classes.rightalign}>
+            <Grid item xs={6} className={classes.rightalign}>
               {isPickupVisible ? (
                 <TextField
                   id="pickupid"
@@ -129,12 +129,12 @@ const PickupForm = () => {
                 edit
               </Button>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={3}>
               <InputLabel htmlFor="dropoffid" className={classes.inputlabel}>
                 Drop-off
               </InputLabel>
             </Grid>
-            <Grid item xs={4} className={classes.rightalign}>
+            <Grid item xs={6} className={classes.rightalign}>
               {isDropOffVisible ? (
                 <TextField
                   size="medium"
