@@ -6,11 +6,13 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   root: {
     backgroundColor: "#d71a62",
+    padding: 10,
   },
   title: {
-    fontSize: 35,
+    fontSize: 55,
     fontWeight: "bold",
-    textAlign: "center",
+    flexGrow: 1,
+    align: "center",
   },
 });
 const NavBar = () => {
@@ -19,9 +21,7 @@ const NavBar = () => {
     <div>
       <AppBar position="fixed" className={classes.root}>
         <ToolBar>
-          <Typography className={classes.title} component="h2">
-            shift
-          </Typography>
+          <Typography className={classes.title}>shift</Typography>
         </ToolBar>
       </AppBar>
     </div>
