@@ -20,6 +20,16 @@ const useStyles = makeStyles({
     color: "#d71a62",
   },
 });
+const marks = [
+  {
+    value: 14,
+    label: "2pm",
+  },
+  {
+    value: 22,
+    label: "10pm",
+  },
+];
 
 function valuetext(value) {
   return `${value}pm`;
@@ -51,6 +61,7 @@ function RangeSlider(props) {
         value={value}
         getAriaValueText={valuetext}
         valueLabelDisplay="auto"
+        marks={marks}
       />
     </div>
   );
@@ -83,6 +94,25 @@ const TimeSlider = withStyles({
   rail: {
     height: 8,
     borderRadius: 4,
+  },
+  mark: {
+    backgroundColor: "#bfbfbf",
+    color: "#d71a62",
+    height: 0,
+    width: 1,
+    marginTop: -3,
+  },
+  markLabel: {
+    opacity: 1,
+    fontSize: "18px",
+    backgroundColor: "#fff",
+    paddingTop: "10px",
+  },
+  markLabelActive: {
+    color: "#d71a62",
+    fontSize: "18px",
+    fontWeight: "bold",
+    paddingTop: "10px",
   },
 })(Slider);
 
