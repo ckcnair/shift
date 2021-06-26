@@ -26,6 +26,7 @@ const useStyles = makeStyles({
   },
   bestprice: {
     backgroundColor: "#d71a62",
+    borderRadius: 8,
   },
   price: {
     marginLeft: "auto",
@@ -33,13 +34,21 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     fontSize: 25,
   },
+  cardcontent: {
+    paddingBottom: 0,
+  },
+  cardaction: {
+    paddingBottom: 0,
+    paddingTop: 0,
+    paddingLeft: 15,
+  },
 });
 
 export default function SimpleCard() {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
-      <CardContent>
+      <CardContent className={classes.cardcontent}>
         <Typography className={classes.title} color="textSecondary">
           Wednesday
         </Typography>
@@ -47,7 +56,7 @@ export default function SimpleCard() {
           5th February
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing className={classes.cardaction}>
         <Chip
           size="small"
           label="Best Price"
